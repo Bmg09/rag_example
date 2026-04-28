@@ -18,7 +18,7 @@ streamlit run app.py
 Use a Python web service.
 
 - Build command: `pip install -r requirements.txt`
-- Start command: `streamlit run app.py --server.address 0.0.0.0 --server.port $PORT`
+- Start command: `streamlit run app.py --server.address 0.0.0.0 --server.port $PORT --server.enableCORS false --server.enableXsrfProtection false --server.enableWebsocketCompression false --browser.gatherUsageStats false`
 - Optional env var: `GEMINI_API_KEY`
 
 The app also accepts the Gemini API key in the sidebar, so the env var is convenient but not required.

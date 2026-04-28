@@ -13,6 +13,16 @@ cp .env.example .env
 streamlit run app.py
 ```
 
+## Deploy on Render
+
+Use a Python web service.
+
+- Build command: `pip install -r requirements.txt`
+- Start command: `streamlit run app.py --server.address 0.0.0.0 --server.port $PORT`
+- Optional env var: `GEMINI_API_KEY`
+
+The app also accepts the Gemini API key in the sidebar, so the env var is convenient but not required.
+
 ## What It Shows
 
 - Text documents become overlapping chunks.
